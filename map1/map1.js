@@ -9,10 +9,8 @@ var Greenway = L.polygon([
 Greenway.bindPopup('Chicago is boring and windy.')
 Park.bindPopup('Chicago is cool and funky.')
 var polylinePoints = L.polyline([
-  [37.781814, -122.404740],
-  [37.781719, -122.404637],
-  [37.781489, -122.404949],
-  [37.780704, -122.403945],
-  [37.780012, -122.404827]
+  [41.87, -87.62],
+  [42, -85],
+  [42, -83]
 ]).addTo(OpenStreetMap)
 polylinePoints.bindPopup('Going to Chicago.')
