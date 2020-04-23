@@ -14,12 +14,13 @@ jQuery.getJSON(statesUrl, function (data) {
    var statecolor = 'olive'
    if (age < 38) { statecolor = 'green'}
    return {
-   color: statecolor,
+   color: stateColor,
    weight: 1,
    fillOpacity: 0.2
   }
 }
-  var geojsonoptions = {
+  var geojsonOptions = {
       style: stateStyle
 }
-  L.geoJSON(data, { style: statestyle }).addTo(OpenStreetMap)
+  L.geoJSON(data, { data, geojsonOptions).addTo(OpenStreetMap)
+})
