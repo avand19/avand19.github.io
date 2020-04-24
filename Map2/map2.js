@@ -7,8 +7,5 @@ L.tileLayer.wms('http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi', {
   attribution: 'NOAA, Iowa State University'
 }).addTo(OpenStreetMap)
 L.tileLayer.wms('https://mesonet.argon.iastate.edu/cgi-bin/wms/us/wwa.cgi', {
-  layers: 'warnings_c',
-  format: 'image/png',
-  transparent: true,
-  attribution: 'NOAA, Iowa State University'
+  layers: 'warnings_c'
 }).addTo(OpenStreetMap)
