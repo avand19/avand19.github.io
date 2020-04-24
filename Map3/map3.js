@@ -5,17 +5,17 @@ jQuery.getJSON(statesUrl, function (data) {
   var stateStyle = function (feature) {
     var pop = feature.properties.POPULATION
     var stateColor = 'olive'
-    if (pop < 4766833) { stateColor = 'green'}
+    if (pop < 4766833) { stateColor = 'green' }
     return {
       color: stateColor,
       weight: 1,
       fillOpacity: 0.2
     }
   }
-var stateLayerOptions = {
-  style: stateStyle,
-  onEachFeature: createPopup
-}
+  var stateLayerOptions = {
+    style: stateStyle,
+    onEachFeature: createPopup
+  }
   L.geoJSON(data, stateLayerOptions).addTo(Map3)
 })
 
