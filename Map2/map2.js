@@ -1,4 +1,4 @@
-var OpenStreetMap = L.map('illinois').setView([41.87, -87.62], 6)
+var OpenStreetMap = L.map('map2').setView([41.87, -87.62], 6)
 L.tileLayer('https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png').addTo(OpenStreetMap)
 L.tileLayer.wms('http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi', {
   layers: 'nexrad-n0r-900913',
